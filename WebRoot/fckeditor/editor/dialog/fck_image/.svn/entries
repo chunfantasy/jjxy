@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="69"
+   name=""
+   committed-date="2009-04-03T09:22:04.203125Z"
+   url="http://192.168.1.12/svn/site/jjxy/branch/BR_lyl_2009.4.3/FCKeditor/editor/dialog/fck_image"
+   kind="dir"
+   uuid="47ca60a1-a701-6243-901d-dab364c6bb92"
+   repos="http://192.168.1.12/svn/site"
+   revision="73"/>
+<entry
+   committed-rev="69"
+   name="fck_image.js"
+   text-time="2009-04-05T02:54:44.000000Z"
+   committed-date="2009-04-03T09:22:04.203125Z"
+   checksum="8aacb05190608e062b8deed8f6c3eb7a"
+   kind="file"
+   prop-time="2009-04-05T02:54:44.000000Z"/>
+<entry
+   committed-rev="69"
+   name="fck_image_preview.html"
+   text-time="2009-04-05T02:54:44.000000Z"
+   committed-date="2009-04-03T09:22:04.203125Z"
+   checksum="0e791d3d4fb6c89247fa0967b897c260"
+   kind="file"
+   prop-time="2009-04-05T02:54:44.000000Z"/>
+</wc-entries>

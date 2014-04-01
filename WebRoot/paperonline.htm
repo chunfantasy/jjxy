@@ -1,0 +1,442 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<TITLE>武汉理工大学经济学院</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<STYLE type=text/css>
+.style7 {font-size: 16px}
+.style8 {font-size: 14px}
+</STYLE>
+<META content="MSHTML 6.00.2900.2802" name=GENERATOR>
+</HEAD>
+<SCRIPT language=javascript>
+//more javascript from http://www.smallrain.net
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var enableanchorlink=0 //Enable or disable the anchor link when clicked on? (1=e, 0=d)
+var hidemenu_onclick=1 //hide menu when user clicks within menu? (1=yes, 0=no)
+
+/////No further editting needed
+
+var ie5=document.all
+var ns6=document.getElementById&&!document.all
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+function showhide(obj, e, visible, hidden){
+if (ie5||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie5 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var windowedge=ie5 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+}
+return edgeoffset
+}
+
+function dropdownmenu(obj, e, dropmenuID){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+if (typeof dropmenuobj!="undefined") //hide previous menu
+dropmenuobj.style.visibility="hidden"
+clearhidemenu()
+if (ie5||ns6){
+obj.onmouseout=delayhidemenu
+dropmenuobj=document.getElementById(dropmenuID)
+if (hidemenu_onclick) dropmenuobj.onclick=function(){dropmenuobj.style.visibility='hidden'}
+dropmenuobj.onmouseover=clearhidemenu
+dropmenuobj.onmouseout=ie5? function(){ dynamichide(event)} : function(event){ dynamichide(event)}
+showhide(dropmenuobj.style, e, "visible", "hidden")
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if ((ie5||ns6) && !enableanchorlink) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie5&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function delayhidemenu(){
+delayhide=setTimeout("dropmenuobj.style.visibility='hidden'",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+var speed = 50 
+var pause = 4000 
+var timerID = null 
+var bannerRunning = false 
+var ar = new Array() 
+ar[0] = "欢迎使用在线投稿系统 ！" 
+var currentMessage = 0 
+var offset = 0 
+function stopBanner() { 
+if (bannerRunning) 
+clearTimeout(timerID) 
+bannerRunning = false 
+} 
+function startBanner() { 
+stopBanner() 
+showBanner() 
+} 
+function showBanner() { 
+var text = ar[currentMessage] 
+if (offset < text.length) { 
+if (text.charAt(offset) == " ") 
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage 
+offset++ 
+timerID = setTimeout("showBanner()", speed) 
+bannerRunning = true 
+} else { 
+offset = 0 
+currentMessage++ 
+if (currentMessage == ar.length) 
+currentMessage = 0 
+timerID = setTimeout("showBanner()", pause) 
+bannerRunning = true 
+} 
+} 
+
+startBanner()
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+document.oncontextmenu=new Function("return false")
+// --> 
+</SCRIPT>
+<style type=text/css>
+BODY {
+	BACKGROUND-IMAGE: url(images/bg.gif); MARGIN: 0px; BACKGROUND-REPEAT: no-repeat
+}
+A {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+BODY {
+	FONT-SIZE: 12px;
+	margin-top: 30px;
+}
+TD {
+	FONT-SIZE: 12px
+}
+TH {
+	FONT-SIZE: 12px
+}
+.unnamed1 {
+	FILTER: DropShadow(Color=#ffffff, OffX=1, OffY=1); COLOR: #013d73
+}
+.unnamed1 A {
+	FILTER: DropShadow(Color=#ffffff, OffX=1, OffY=1); COLOR: #013d73; TEXT-DECORATION: none
+}
+.unnamed1 A:hover {
+	TEXT-DECORATION: underline
+}
+#dh A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+#dh A:hover {
+	COLOR: #0099ff; TEXT-DECORATION: none
+}
+.anylinkcss {
+	BORDER-RIGHT: #0a4753 1px solid; BORDER-TOP: #0a4753 1px solid; Z-INDEX: 100; FILTER: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=75,finishOpacity=100); VISIBILITY: hidden; FONT: 12px/18px Verdana; MARGIN-LEFT: -18px; BORDER-LEFT: #0a4753 1px solid; WIDTH: 80px; COLOR: #5a96ce; BORDER-BOTTOM: #0a4753 1px solid; POSITION: absolute; TOP: 20px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+.anylinkcss A {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; WIDTH: 100%; COLOR: #5a96ce; TEXT-INDENT: 5px; PADDING-TOP: 1px; TEXT-DECORATION: none
+}
+.anylinkcss A:hover {
+	COLOR: #ffffff; BACKGROUND-COLOR: #5a96ce; TEXT-DECORATION: none
+}
+#ttt A {
+	
+}
+#ttt A:hover {
+	DISPLAY: block; COLOR: #ffffff; BACKGROUND-COLOR: #4ac9f9
+}
+#ttt A:active {
+	DISPLAY: block; COLOR: #ffffff; BACKGROUND-COLOR: #4ac9f9
+}
+a:visited {
+	color: #FF0000;
+}
+a:hover {
+	color: #FF00CC;
+}
+a:active {
+	color: #3399FF;
+}
+</style>
+<BODY bgcolor="#FFFFFF" text="#003399">
+<center>
+  <img src="images/DDDDDD.png" width="787" height="96"> 
+  <table width="778" height="30" border="0" cellspacing="0" cellpadding="0"  bgcolor="#FFFFCC">
+  <tr>
+    <td width="100"><div align="center" class="style7"><a href="index.jsp" target="_blank">学院首页</a></div></td>
+    <td width="1" bgcolor="#FF0000"></td>
+        <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="778" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="30" bgcolor="#CFDFdF">
+        <div align="center" class="style7">[在线投稿]</div>
+    </td>
+  </tr>
+</table>
+  <table width="778" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td height="25" bgcolor="#CFDFDF" width="378" >&nbsp; &nbsp;&nbsp;&nbsp;》》<span class="style8">电商类</span></td>
+      <td height="25" bgcolor="#CFDFDF" width="12" >》</td>
+      <td height="25" bgcolor="#CFDFDF" width="186" >》》<span class="style8">经济类</span></td>
+      <td height="25" bgcolor="#CFDFDF" width="202" >》》<span class="style8">金融类</span></td>
+    </tr>
+    <tr> 
+      <td height="393" bgcolor="#FFFFFF" valign="top" width="378" > 
+        <table border="1">
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"> 
+            <div align="center"><font size="2">计算机类核心刊物</font></div>            </td>
+            <td width="214"><font size="2"><a href="http://www.sysengi.com/" target="_blank">系统工程理论与实践</a></font></td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><a href="http://cjc.ict.ac.cn/" target="_blank"><font size="2">计算机学报</font></a></td>
+            <td width="214"><font size="2"><a href="http://www.whiceb.com/index.htm" target="_blank"><font size="2">武汉国际电子商务会议(2007)</font></a></font></td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><a href="http://www.jos.org.cn/" target="_blank"><font size="2">软件学报</font></a></td>
+            <td width="214"><font size="2">http://www.fuzzieee2007.org/</font></td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><a href="http://crad.ict.ac.cn/tgzn.htm" target="_blank"><font size="2">计算机研究与发展</font></a></td>
+            <td width="214"><a href="http://202.118.250.162:8080/conference/" target="_blank">哈工大管理科学与工程会议2007</a></td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><a href="http://www.aas.net.cn/cn/gyzz.asp" target="_blank"><font size="2">自动化学报</font></a></td>
+            <td width="214"><a href="http://cm.hust.edu.cn/icm2007/index.htm" target="_blank">第六届管理管理大会（华科大2007）</a></td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><a href="http://www.jsjkx.com/" target="_blank"><font size="2">计算机科学</font></a></td>
+            <td width="214"><a href="http://www.ruc.edu.cn/wisa2007/" target="_blank">wisa2007(EI源刊) </a></td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><font size="2">控制理论与应用</font></td>
+            <td width="214"><strong><a href="sciofchina.htm" target="_blank">2005年SCI收录中国期刊目录</a></strong></td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><a href="http://www.ceaj.org/" target="_blank"><font size="2">计算机工程与应用</font></a></td>
+            <td width="214"><a href="http://www.ei.org.cn/twice/coverage.jsp" target="_blank">EI中国网站</a></td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><a href="http://202.127.207.62:84/xkmc.asp"><font size="2">模式识别与人工智能</font></a></td>
+            <td width="214"><a href="EIOFCHINA.htm" target="_blank">EI收录的中国期刊名单</a></td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><font size="2">控制与决策</font></td>
+            <td width="214">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><font size="2">小型微型计算机系统</font></td>
+            <td width="214">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><font size="2"><a href="http://www.ecice06.com/index.asp" target="_blank">计算机工程</a></font></td>
+            <td width="214">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><a href="http://www.computerapplications.com.cn/index.asp"><font size="2">计算机应用</font></a></td>
+            <td width="214">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><font size="2">微型计算机<br>
+            </font></td>
+            <td width="214">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146"><font size="2"><a href="http://www.arocmag.com/" target="_blank">计算机应用研究</a><br>
+            </font></td>
+            <td width="214">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146">&nbsp;</td>
+            <td width="214">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146">&nbsp;</td>
+            <td width="214">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146">&nbsp;</td>
+            <td width="214"><a href="hxqk2004.htm" target="_blank">北大核心期刊2004年目录</a></td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146">&nbsp;</td>
+            <td width="214">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146">&nbsp;</td>
+            <td width="214">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF" bordercolor="#FFCCFF"> 
+            <td width="146">&nbsp;</td>
+            <td width="214">&nbsp;</td>
+          </tr>
+        </table>
+        <br>
+      </td>
+      <td height="393" bgcolor="#FFFFFF" valign="top" colspan="3" > 
+        <table width="100%" border="1">
+          <tr bgcolor="#FFCCFF">
+            <td width="70%"><div align="center" class="style8">一类期刊</div></td> 
+            <td width="30%"><div align="center"><span class="style8">二类期刊</span></div></td>
+          </tr>
+          <tr bgcolor="#FFCCFF">
+            <td width="70%"><div align="center"><font size="2"><a href="http://ssic.cass.cn/" target="_blank">中国社会科学</a></font></div></td> 
+            <td width="30%"><div align="center"><a href="http://www.fec.com.cn/czyjzz/" target="_blank">财政研究</a></div></td>
+          </tr>
+          <tr bgcolor="#FFCCFF">
+            <td width="70%"><div align="center"><font size="2"><a href="http://www.erj.cn/" target="_blank">经济研究</a></font></div></td> 
+            <td width="30%"><div align="center"><a href="http://admin1.chinajournal.net.cn/sitepage1/index.asp?rwbh=TJYJ" target="_blank">统计研究</a></div></td>
+          </tr>
+          <tr bgcolor="#FFCCFF">
+            <td width="70%"><div align="center"><font size="2"><a href="http://www.aeaweb.org/aer/" target="_blank">The American Economic Review</a>(美)</font></div></td> 
+            <td width="30%"><div align="center"><a href="http://admin1.chinajournal.net.cn/sitepage5/index.asp?rwbh=JJXD" target="_blank">经济学动态</a></div></td>
+          </tr>
+          <tr bgcolor="#FFCCFF">
+            <td width="70%"><div align="center"><font size="2"><a href="http://www.economist.com/" target="_blank">The Economists</a>（英）</font></div></td> 
+            <td width="30%"><div align="center">经济科学</div></td>
+          </tr>
+          <tr bgcolor="#FFCCFF">
+            <td width="70%"><div align="center"><font size="2"><a href="http://www.res.org.uk/" target="_blank">The Economic Journal</a>（英）</font></div></td> 
+            <td width="30%"><div align="center">金融研究</div></td>
+          </tr>
+          <tr bgcolor="#FFCCFF">
+            <td width="70%"><div align="center"><font size="2"><a href="http://www.hbsp.harvard.edu/products/hbr/index.html" target="_blank">Harvard Business Review</a>（美）</font></div></td> 
+            <td width="30%"><div align="center"><a href="http://admin.chinajournal.net.cn/model01/index.asp?rwbh='GJJR'" target="_blank">国际金融研究</a></div></td>
+          </tr>
+          <tr bgcolor="#FFCCFF">
+            <td width="70%"><div align="center"><font size="2"><a href="http://www.afajof.org/" target="_blank">The Journal of Finance</a>（美）</font></div></td> 
+            <td width="30%"><div align="center"><a href="http://admin1.chinajournal.net.cn/sitepage4/index.asp?rwbh=CMJJ" target="_blank">财贸经济</a></div></td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%"><font size="2"></font></td>
+            <td width="30%"><font size="2"></font></td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%"><font size="2"></font></td>
+            <td width="30%"><font size="2"></font></td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%"><font size="2"></font></td>
+            <td width="30%"><font size="2"></font></td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%"><font size="2"></font></td>
+            <td width="30%"><font size="2"></font></td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%"><font size="2"></font></td>
+            <td width="30%"><font size="2"></font></td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%"><font size="2"></font></td>
+            <td width="30%"><font size="2"></font></td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%"><font size="2"></font></td>
+            <td width="30%"><font size="2"></font></td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%">&nbsp;</td>
+            <td width="30%">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%">&nbsp;</td>
+            <td width="30%">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%">&nbsp;</td>
+            <td width="30%">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%">&nbsp;</td>
+            <td width="30%">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%">&nbsp;</td>
+            <td width="30%">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FFCCFF"> 
+            <td width="70%">&nbsp;</td>
+            <td width="30%">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td height="2"   bgcolor="#FFFF00" colspan="4" ></td>
+    </tr>
+</table>
+  
+  
+<TABLE cellSpacing=0 cellPadding=0 width=780 align=center 
+ 
+  <TR>
+    <TD class=unnamed1 height=42>
+      <TABLE cellSpacing=0 cellPadding=0 width=751 align=center border=0>
+      
+        <TR>
+          <TD width=409>通讯地址:武汉理工大学经济学院 邮政编码：430070<BR>
+          </TD>
+          <TD width=342>&nbsp;</TD>
+        </TR></TABLE></TD></TR></TABLE></BODY></HTML>

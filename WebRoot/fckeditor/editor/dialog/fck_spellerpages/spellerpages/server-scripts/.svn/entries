@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="69"
+   name=""
+   committed-date="2009-04-03T09:22:04.203125Z"
+   url="http://192.168.1.12/svn/site/jjxy/branch/BR_lyl_2009.4.3/FCKeditor/editor/dialog/fck_spellerpages/spellerpages/server-scripts"
+   kind="dir"
+   uuid="47ca60a1-a701-6243-901d-dab364c6bb92"
+   repos="http://192.168.1.12/svn/site"
+   revision="73"/>
+<entry
+   committed-rev="69"
+   name="spellchecker.cfm"
+   text-time="2009-04-05T02:54:46.000000Z"
+   committed-date="2009-04-03T09:22:04.203125Z"
+   checksum="7eab8b7286626052ffc225785400fba9"
+   kind="file"
+   prop-time="2009-04-05T02:54:46.000000Z"/>
+<entry
+   committed-rev="69"
+   name="spellchecker.php"
+   text-time="2009-04-05T02:54:46.000000Z"
+   committed-date="2009-04-03T09:22:04.203125Z"
+   checksum="be43df724d28a43bda45f839aa8ce035"
+   kind="file"
+   prop-time="2009-04-05T02:54:46.000000Z"/>
+<entry
+   committed-rev="69"
+   name="spellchecker.pl"
+   text-time="2009-04-05T02:54:46.000000Z"
+   committed-date="2009-04-03T09:22:04.203125Z"
+   checksum="c00db2359921d02ceb666df5c9f895ce"
+   kind="file"
+   prop-time="2009-04-05T02:54:46.000000Z"/>
+</wc-entries>

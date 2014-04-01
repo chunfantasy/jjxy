@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title></title>
+<style type="text/css">
+<!--
+.style1 {font-size: 12px}
+-->
+</style>
+</head>
+<script language="JavaScript">
+  //定义验证函数
+  function isNum(passedVal){
+     if(passedVal == ""){
+	 return false;
+   }
+   for(i=0;i<passedVal.length;i++){
+     if(passedVal.charAt(i)<"0"){//如果输入值小于0，则错误
+	  return false;
+	 }
+	 if(passedVal.charAt(i)>"9"){//如果输入值不在0～9范围内，则错误
+	  return false;
+	 }
+	}
+	return true;
+   }
+  function isValid(){
+     if(form.textfield.value==""){
+	    alert(论文题目不能为空!); 
+		 document.form.textfield.focus();
+	 return false;	 
+		 }
+	 if(form.Reasons.value==""){
+	    alert("选题理由不能为空!");
+		   document.form.Reasons.focus();
+		return false;   
+	 }
+	 if(form.KeyWords1.value==""){
+	    alert("第一个关键字不能为空!");
+		   document.form.KeyWords1.focus();
+		return false;   
+	 }
+	 if(form.KeyWords2.value==""){
+	    alert("第二个关键字不能为空!");
+		   document.form.KeyWords2.focus();
+		return false;   
+	 }
+	 if(form.KeyWords3.value==""){
+	    alert("第三个关键字不能为空!");
+		   document.form.KeyWords3.focus();
+		return false;   
+	 }
+	 if(form.KeyWords4.value==""){
+	    alert("第四个关键字不能为空!");
+		   document.form.KeyWords4.focus();
+		return false;   
+	 }
+	 if(form.KeyWords5.value==""){
+	    alert("第五个关键字不能为空!");
+		   document.form.KeyWords5.focus();
+		return false;   
+	 }
+   }
+</script>
+<body bgcolor="#99CCFF">
+<div align="center">
+<form name="form" method="post" action="index.jsp" onSubmit="return isValid();">
+  <table width="532" height="467" border="1" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tr>
+      <td width="96" height="26"><div align="center">论文题目</div></td>
+      <td colspan="2" valign="middle"><div align="center">
+        
+          <div align="left">
+            <input name="textfield" type="text" size="50" maxlength="60">
+          *</div>
+       
+      </div>        <div align="center"></div></td>
+    </tr>
+    <tr>
+      <td><div align="center">选题理由</div></td>
+      <td colspan="2"><div align="center"></div>        
+      
+       
+          <div align="left">
+          <textarea name="Reasons" cols="55" rows="20"></textarea>
+          
+      *</div></td>
+    </tr>
+    <tr>
+      <td rowspan="4"><div align="center">关键字（至少写5个）</div>        <div align="center"></div>        <div align="center"></div>        <div align="center"></div></td>
+      <td width="218" height="26">        <div align="left">
+          <input name="KeyWords1" type="text" maxlength="20">
+          *</div></td>
+      <td width="218">
+        <div align="left">
+          <input name="KeyWords2" type="text" maxlength="20">
+        *</div></td>
+    </tr>
+    <tr>
+      <td height="27">
+        <div align="left">
+          <input name="KeyWords3" type="text" maxlength="20">
+        *</div></td>
+      <td>
+        <div align="left">
+          <input name="KeyWords4" type="text" maxlength="20">
+        *</div></td>
+    </tr>
+    <tr>
+      <td height="28">
+        <div align="left">
+          <input name="KeyWords5" type="text" maxlength="20">
+        *</div></td>
+      <td>
+        <div align="left">
+          <input name="KeyWords6" type="text" maxlength="20">
+        </div></td>
+    </tr>
+    <tr>
+      <td height="26">
+        <div align="left">
+          <input name="KeyWords7" type="text" maxlength="20">
+        </div></td>
+      <td>
+        <div align="left">
+          <input name="KeyWords8" type="text" maxlength="20">
+        </div></td>
+    </tr>
+    <tr>
+      <td height="22" colspan="3"><div align="center"></div>        
+        <div align="center" class="style1">注：带“*”的选项为必填</div>        
+        <div align="center"></div></td>
+      </tr>
+    <tr>
+      <td colspan="3"><div align="center">
+        <input type="submit" name="Submit" value="提交">
+        <input name="reset" type="reset" id="reset" value="重填">
+      </div></td>
+      </tr>
+  </table>
+  </form> 
+</div>
+</body>
+</html>

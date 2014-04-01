@@ -1,0 +1,4 @@
+#Mon Apr 27 17:20:13 CST 2009
+eclipse.preferences.version=1
+validator.Checked=WebRoot/FCKeditor,WebRoot/jjxy_manager/manage_pages/FCKeditor,FCKeditor/editor/dialog
+validator.Unchecked=

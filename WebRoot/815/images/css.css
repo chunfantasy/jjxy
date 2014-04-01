@@ -1,0 +1,26 @@
+table {
+	font-family: "ËÎÌו";
+	font-size: 9pt;
+	color: #000; #21498C;
+}
+body{background-color:#21498C; font-family:Verdana, Arial, Helvetica, sans-serif;}
+a:link {
+	color: #333;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333;
+	text-decoration: underline;
+
+}
+a:active {
+	color: #1B2F89;
+	text-decoration: none;
+
+}
